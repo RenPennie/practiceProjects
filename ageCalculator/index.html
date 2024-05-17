@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="main.css"
+		/>
+		<title>Age calculator app</title>
+	</head>
+	<body>
+		<div class="app-container">
+			<section class="form-container">
+				<div class="date-container">
+					<div class="form-item form-item__day">
+						<label
+							for="date"
+							class="form-item__label"
+							>DAY</label
+						>
+						<input
+							id="day"
+							placeholder="DD"
+							class="form-item__input"
+						/>
+						<span class="error-invalid">Must be a valid day.</span>
+						<span class="error-empty">This field is required.</span>
+					</div>
+					<div class="form-item form-item__month">
+						<label
+							for="month"
+							class="form-item__label"
+							>MONTH</label
+						>
+						<input
+							id="month"
+							placeholder="MM"
+							class="form-item__input"
+						/>
+						<span class="error-invalid">Must be a valid month.</span>
+						<span class="error-empty">This field is required.</span>
+					</div>
+					<div class="form-item form-item__year">
+						<label
+							for="year"
+							class="form-item__label"
+							>YEAR</label
+						>
+						<input
+							id="year"
+							placeholder="YYYY"
+							class="form-item__input"
+						/>
+						<span class="error-invalid">Must be a valid year.</span>
+						<span class="error-empty">This field is required.</span>
+					</div>
+				</div>
+			</section>
+			<section class="line-container">
+				<div class="line"></div>
+				<div class="button-spacer">
+					<button class="btn-submit">
+						<img
+							src="assets/images/icon-arrow.svg"
+							class="arrow-image"
+						/>
+					</button>
+				</div>
+			</section>
+			<section class="result-container">
+				<div
+					id="result"
+					class="age-display"
+				>
+					<h2><span id="displayY">- -</span> years</h2>
+					<h2><span id="displayM">- -</span> months</h2>
+					<h2><span id="displayD">- -</span> days</h2>
+				</div>
+			</section>
+		</div>
+		<script src="scripts/scripts.js"></script>
+	</body>
+</html>
