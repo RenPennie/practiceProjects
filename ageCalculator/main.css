@@ -9,6 +9,10 @@
 	--light-grey: hsl(0, 0%, 86%);
 	--smokey-grey: hsl(0, 1%, 44%);
 	--off-black: hsl(0, 0%, 8%);
+
+	h2 {
+		margin: 0;
+	}
 }
 /* FONT WEIGHTS AVAILABLE 400i, 700, 800i */
 body {
@@ -69,7 +73,7 @@ body {
 	font-weight: 800;
 	font-size: 3.5em;
 	color: var(--off-black);
-	line-height: 112%;
+	line-height: 124%;
 
 	span {
 		color: var(--purple);
