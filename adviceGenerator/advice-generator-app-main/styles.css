@@ -78,6 +78,5 @@ body {
 }
 
 .advice--btn:hover {
-	/* background-color: hsl(45, 82%, 46%); */
 	box-shadow: 0 0 1.75rem 0 var(--neon-green);
 }
