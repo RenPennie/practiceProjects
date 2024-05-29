@@ -1,0 +1,83 @@
+@import "/reset.css";
+
+:root {
+	--light-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+	--p-max-width: 100%;
+
+	font-family: "Manrope", sans-serif;
+	font-weight: 800;
+	background-color: var(--dark-blue);
+}
+
+body {
+	position: relative;
+	height: 100svh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.advice--content {
+	color: var(--light-cyan);
+	position: relative;
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	padding: 1.75rem;
+}
+
+.advice--block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 540px;
+	min-width: 345px;
+
+	padding-inline: 1.5rem;
+	padding-block-start: 2.625rem;
+	padding-block-end: 4rem;
+	background-color: var(--dark-grayish-blue);
+	border-radius: 0.75rem;
+}
+.advice--id {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	letter-spacing: 0.32em;
+	color: var(--neon-green);
+}
+.advice--text {
+	font-size: 2.5rem;
+	padding-block: 2rem;
+}
+
+.advice--replace::before {
+	content: "“";
+}
+.advice--replace::after {
+	content: "”";
+}
+
+.advice--btn {
+	background-color: var(--neon-green);
+	border: none;
+	padding: 21px 21px;
+	border-radius: 100px;
+	margin-top: -66px;
+	transition: 0.5s;
+}
+
+.advice--btn:hover {
+	/* background-color: hsl(45, 82%, 46%); */
+	box-shadow: 0 0 1.75rem 0 var(--neon-green);
+}
