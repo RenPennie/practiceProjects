@@ -1,4 +1,5 @@
-@import "/reset.css";
+@import "../reset.css";
+@import "../../reset.css";
 
 :root {
 	--light-cyan: hsl(193, 38%, 86%);
