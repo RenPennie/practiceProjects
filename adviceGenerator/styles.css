@@ -1,6 +1,50 @@
-@import "../reset.css";
-@import "../../reset.css";
+/* Path: adviceGenerator/styles.css */
 
+/* CSS RESETS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* color-scheme: dark light; */
+	hanging-punctuation: first last;
+}
+
+body {
+	min-height: 100svh;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p,
+li {
+	max-width: var(--p-max-width, 65ch);
+	text-wrap: pretty;
+}
+
+/* PROJECT CSS */
 :root {
 	--light-cyan: hsl(193, 38%, 86%);
 	--neon-green: hsl(150, 100%, 66%);
@@ -13,10 +57,9 @@
 	font-weight: 800;
 	background-color: var(--dark-blue);
 }
-
 body {
 	position: relative;
-	height: 100svh;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
